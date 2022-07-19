@@ -1,0 +1,56 @@
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.card {
+    height: 50vh;
+    width: 15vw;
+    background-color: bisque;
+    position: relative;
+
+}
+
+.card>span {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 30px !important;
+    border-radius: 50%;
+    border: 1px solid red;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.delete {
+    right: 65px !important;
+}
+
+.new-page{
+    background-color: blueviolet;
+    
+}
+.popup, .new-popup{
+    position: absolute;
+    z-index: 10;
+    display: none;
+    flex-flow: column wrap;
+    height: 20vh;
+    width: 20vw;
+    padding: 20px;
+    background-color: burlywood;
+    justify-content: space-between;
+    left: calc((100vw - 40vw)/2);
+    top: calc((100vh-20h)/2);
+
+}
+.new-popup{
+    background-color: bisque;
+}
+
+.popup > input, .popup > button, .new-popup > input, .new-popup > button{
+    border: none;
+    padding: 10px;
+}
